@@ -1,0 +1,115 @@
+@import "./../colors";
+
+.game {
+  flex-grow: 1;
+
+  .scene {
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+
+    .start-item {
+      flex-grow: 1;
+      .tip {
+        font-style: italic;
+      }
+    }
+
+    .main-area {
+      flex-grow: 1;
+
+      display: flex;
+      flex-direction: row;
+
+      .round {
+        flex-grow: 1;
+
+        margin: 2px;
+        display: flex;
+        flex-direction: column;
+
+        .title {
+        }
+        .message {
+          font-style: italic;
+        }
+        .items {
+          flex-grow: 1;
+
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+        }
+        .action {
+        }
+      }
+
+      .history {
+        flex-grow: 0;
+
+        .round-row {
+          margin-bottom: 1px;
+          padding: 3px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        }
+
+        .round-row.draw {
+          background: rgba(lightslategray, .5);
+        }
+        .round-row.win {
+          background: rgba(green, .5);
+        }
+        .round-row.loose {
+          background: rgba(red, .5);;
+        }
+      }
+    }
+
+    .score {
+      flex-grow: 0;
+
+      background: $color2;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .round-info {
+        color: $color4;
+        flex-grow: 1;
+      }
+      .score-item {
+        flex-grow: 1;
+        margin: 10px 10px;
+        padding: 5px;
+        background: $color3;
+        border: solid 3px $color5;
+        color: $color2;
+        border-radius: 10px;
+      }
+    }
+
+    .completed {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(black, .8);
+      color: white;
+      font-size: large;
+
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+  }
+
+}

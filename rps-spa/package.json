@@ -1,0 +1,38 @@
+{
+  "name": "rps-spa",
+  "version": "1.0.0",
+  "description": "Simplistic single page app for Rock Paper Scissor game type, depends on 'rps-core'",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server --progress --hot",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.3.1",
+    "babel-core": "^6.4.5",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.8.5",
+    "flux": "^2.1.1",
+    "html-webpack-plugin": "^2.7.2",
+    "lodash": "^4.0.1",
+    "node-sass": "^3.4.2",
+    "postcss": "^5.0.14",
+    "postcss-loader": "^0.8.0",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "lodash": "^4.0.1",
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6"
+  }
+}

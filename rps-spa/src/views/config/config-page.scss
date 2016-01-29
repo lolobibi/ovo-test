@@ -1,0 +1,33 @@
+@import "./../colors";
+
+.config-page {
+  background: $color4;
+  overflow: hidden;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .header {
+    flex-grow: 0;
+  }
+  .main-area {
+    flex-grow: 1;
+
+    .option-block {
+      margin: 5px;
+      padding: 5px;
+      background: rgba(white, .3);
+      .line {
+        display: inline;
+      }
+      .tip {
+        padding: 5px;
+        color: #303030;
+        font-size: 12px;
+        font-style: oblique;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import "./../colors";
+
+.game-page {
+  background: $color4;
+  overflow: hidden;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+

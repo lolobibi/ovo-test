@@ -1,0 +1,53 @@
+@import "./../colors";
+
+$imageSize: 100px;
+$miniImageSize: 25px;
+
+.game-item {
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  background: $color1;
+  border-radius: 5px;
+  border: solid 2px $color5;
+  box-shadow: 0 0 20px rgba(black, .5);
+  padding: 5px;
+
+  .picture {
+    width: $imageSize;
+    height: $imageSize;
+    background-size: contain;
+  }
+  .picture.rock {
+    background-image: url("./resources/icon-rock.png");
+  }
+  .picture.paper {
+    background-image: url("./resources/icon-paper.png");
+  }
+  .picture.scissor {
+    background-image: url("./resources/icon-scissor.png");
+  }
+  .picture.well {
+    background-image: url("./resources/icon-well.png");
+  }
+  .label {
+    color: $color4;
+  }
+}
+
+.game-item.selectable {
+  cursor: pointer;
+}
+
+.game-item.mini {
+  background: rgba(white, 0.5);
+  border-radius: 2px;
+  border: solid 0px $color5;
+  box-shadow: 0 0 0px rgba(black, .5);
+  padding: 1px;
+
+  .picture {
+    width: $miniImageSize;
+    height: $miniImageSize;
+  }
+}
